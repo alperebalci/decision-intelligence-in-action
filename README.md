@@ -1,5 +1,11 @@
 # Decision Intelligence in Action
 
+<!-- portfolio-umbrella:start -->
+## Portfolio role
+
+This repository is intentionally maintained as a standalone primary repository in the consolidated Jors Academy portfolio. It is not used as a container for other projects.
+<!-- portfolio-umbrella:end -->
+
 ### Solving Real-World Problems with Optimization and AI
 
 **By Alper Ersin Balcı**
