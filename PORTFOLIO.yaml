@@ -1,0 +1,12 @@
+schema_version: 1
+repository: decision-intelligence-in-action
+role: standalone
+axis: standalone
+area: decision-intelligence
+status: active
+owner: jorsacademy
+projects: []
+conventions:
+  provenance_records: false
+  reproducibility_expected: true
+  benchmark_assumptions_documented: true
