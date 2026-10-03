@@ -86,15 +86,23 @@ The current Jors Academy portfolio already covers much of the technical core:
 - finance: `banking-and-financial-services-optimization`, `quantitative-trading-and-market-microstructure-optimization`, `derivatives-pricing-hedging-and-xva`
 - emerging optimization: `quantum-qubo-hybrid-optimization`
 
-## Highest-value gaps to close
+## Recent Management Science portfolio additions and remaining gaps
 
-The next additions should not duplicate already strong optimization coverage. The highest-value gaps are:
+The portfolio now closes several previously identified gaps through repository-native projects inside the relevant umbrella repositories:
 
-1. **Fairness-aware and human-centered optimization.** Add explicit service-equity metrics, transparent policy parameters, Pareto trade-offs, and human review/override protocols to resource-allocation projects.
-2. **Statistical quality engineering.** Add executable DOE/SPC/capability-analysis labs to manufacturing projects rather than treating quality only as an optimization objective.
-3. **Causal operations and experimentation.** Build a dedicated project around A/B testing, observational causal inference, heterogeneous treatment effects, and decision policies.
-4. **Healthcare/service operations.** Add only as a dedicated domain repository with careful problem framing; do not force healthcare examples into unrelated optimization projects.
-5. **Decision-system production engineering.** Extend existing computational repositories with reproducibility, model monitoring, data contracts, and remote/cloud execution where those mechanisms materially affect optimization workflows.
+1. **Fairness-aware and human-centered optimization:** `resource-allocation-optimization` includes explicit fairness-efficiency trade-offs and human-centered allocation guidance.
+2. **Statistical quality engineering:** `manufacturing-systems-optimization` includes executable DOE, SPC and capability-analysis material.
+3. **Causal operations and experimentation:** `pricing-and-revenue-optimization/projects/causal-operations-and-experimentation` implements randomized ATE estimation, difference-in-differences, AIPW and budgeted treatment policies.
+4. **Behavioral operations:** `inventory-optimization-and-control/projects/behavioral-operations-and-human-decision-making` implements behavioral newsvendor bias, anchoring and bounded human overrides.
+5. **Market design and incentives:** `resource-allocation-optimization/projects/market-design-mechanism-design-and-incentives` adds welfare-maximizing assignment, VCG payments and stable matching.
+6. **Service systems and queueing:** `workforce-optimization-and-analytics/projects/service-systems-and-queueing` adds Erlang C staffing, service-level constraints and simulation validation.
+7. **Empirical operations and structural demand:** `pricing-and-revenue-optimization/projects/empirical-operations-and-demand-modeling` adds multinomial-logit demand estimation, elasticities and price optimization.
+8. **Project portfolio and project scheduling:** `classical-scheduling-optimization/projects/project-portfolio-and-project-scheduling` adds CPM/PERT, completion-risk simulation and budgeted project selection.
+9. **System dynamics for operations:** `robust-and-adaptive-supply-chain-optimization/projects/system-dynamics-for-operations` adds stock-flow feedback, delayed supply lines and bullwhip analysis.
+
+The principal domain gap intentionally left open is **healthcare/public-service operations**. It should be added only as a dedicated domain repository with careful governance, not forced into unrelated optimization examples.
+
+Decision-system production engineering remains a cross-cutting implementation objective: reproducibility, data contracts, monitoring and deployment should continue to be added where they materially affect decision workflows.
 
 ## Topics that do not need priority expansion
 
