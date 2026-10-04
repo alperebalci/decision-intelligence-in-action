@@ -99,10 +99,12 @@ The portfolio now closes several previously identified gaps through repository-n
 7. **Empirical operations and structural demand:** `pricing-and-revenue-optimization/projects/empirical-operations-and-demand-modeling` adds multinomial-logit demand estimation, elasticities and price optimization.
 8. **Project portfolio and project scheduling:** `classical-scheduling-optimization/projects/project-portfolio-and-project-scheduling` adds CPM/PERT, completion-risk simulation and budgeted project selection.
 9. **System dynamics for operations:** `robust-and-adaptive-supply-chain-optimization/projects/system-dynamics-for-operations` adds stock-flow feedback, delayed supply lines and bullwhip analysis.
+10. **Strategic and adversarial optimization:** `resource-allocation-optimization/projects/adversarial-game-theoretic-optimization` adds Stackelberg security allocation, exact small-network interdiction and finite-scenario robust attacker-defender allocation.
+11. **Production decision-system engineering:** `production-planning-optimization/projects/closed-loop-production-decision-system` adds explicit data contracts, primary/fallback planning, auditable recommendations, human overrides, execution feedback and drift-triggered reoptimization.
 
 The principal domain gap intentionally left open is **healthcare/public-service operations**. It should be added only as a dedicated domain repository with careful governance, not forced into unrelated optimization examples.
 
-Decision-system production engineering remains a cross-cutting implementation objective: reproducibility, data contracts, monitoring and deployment should continue to be added where they materially affect decision workflows.
+Decision-system production engineering now has an explicit reference implementation in `production-planning-optimization/projects/closed-loop-production-decision-system`. It remains a cross-cutting implementation objective: reproducibility, data contracts, monitoring, fallbacks, auditability and deployment controls should continue to be added where they materially affect decision workflows.
 
 ## Topics that do not need priority expansion
 
