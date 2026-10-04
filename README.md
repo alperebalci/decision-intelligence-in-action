@@ -63,10 +63,6 @@ This book is intended for:
 - Explainable AI for Decision Systems
 - Online and Real-Time Optimization
 
-## Modern IE/OR Curriculum
-
-A curriculum and portfolio-alignment guide is available in [MODERN_IE_OR_CURRICULUM.md](./MODERN_IE_OR_CURRICULUM.md). It maps bachelor's and master's IE/OR topics to the existing Jors Academy project portfolio and identifies the highest-value gaps for future work.
-
 ## Why I Made It Freely Available
 
 I wrote this book to organize and share a broad, practical view of modern decision intelligence: not only how to predict what may happen, but how to determine what should be done under objectives, constraints, uncertainty, and real-world operational requirements.
