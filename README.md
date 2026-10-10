@@ -63,6 +63,12 @@ This book is intended for:
 - Explainable AI for Decision Systems
 - Online and Real-Time Optimization
 
+## Companion code: book-to-portfolio crosswalk
+
+The [topic-to-code crosswalk](https://github.com/alperebalci/optimization-methods-taxonomy/blob/main/docs/book-to-code-crosswalk.md) connects the book's subjects to existing runnable Industrial Engineering / Operations Research implementations. It distinguishes implemented examples from partial coverage and planned research, including constraint programming, multi-objective optimization, simulation, queueing, causal inference, facility layout, MPC, and online decisions.
+
+Many examples are nested under an umbrella repository's `projects/` folder rather than maintained as separate top-level repositories. The mapping provides a starting point for inspecting code, tests, assumptions, and reproducibility; it is not a claim that every book topic has production-ready software.
+
 ## Why I Made It Freely Available
 
 I wrote this book to organize and share a broad, practical view of modern decision intelligence: not only how to predict what may happen, but how to determine what should be done under objectives, constraints, uncertainty, and real-world operational requirements.
