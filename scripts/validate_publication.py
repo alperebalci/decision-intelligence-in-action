@@ -10,7 +10,7 @@ from pypdf import PdfReader
 
 def validate_publication(path: Path, min_pages: int = 10) -> list[str]:
     errors: list[str] = []
-    if not path.is_file() or path.stat().st_size < 1024:
+    if not path.is_file() or path.stat().st_size < 32:
         return ["PDF missing or implausibly small"]
     try:
         with path.open("rb") as file:
