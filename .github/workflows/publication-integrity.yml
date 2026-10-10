@@ -1,0 +1,40 @@
+name: Publication PDF integrity
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "Decision-Intelligence-in-Action.pdf"
+      - "scripts/validate_publication.py"
+      - "tests/test_validate_publication.py"
+      - ".github/workflows/publication-integrity.yml"
+  pull_request:
+    paths:
+      - "Decision-Intelligence-in-Action.pdf"
+      - "scripts/validate_publication.py"
+      - "tests/test_validate_publication.py"
+      - ".github/workflows/publication-integrity.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pdf-structure:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install PDF structural parser
+        run: python -m pip install "pypdf>=5,<7"
+      - name: Test publication validator negative and positive cases
+        run: python -m unittest discover -s tests -p test_validate_publication.py -v
+      - name: Audit distributed PDF readability and pages
+        run: python scripts/validate_publication.py Decision-Intelligence-in-Action.pdf --min-pages 10

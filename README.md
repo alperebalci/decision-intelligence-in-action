@@ -88,3 +88,7 @@ Copyright © 2026 Alper Ersin Balcı.
 This work is licensed under the **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License (CC BY-NC-ND 4.0)**.
 
 You may share the book with attribution for non-commercial purposes, provided that it is distributed unchanged. See the [LICENSE](./LICENSE) file for details.
+
+## Publication integrity CI
+
+The [publication-integrity CI](.github/workflows/publication-integrity.yml) parses the distributed PDF and verifies its signature, minimum page count and sampled page dimensions with `pypdf` on Python 3.11/3.12. Regression tests ensure corrupt/missing publications are rejected. **This checks structural readability, not visual layout, citations, technical content, or scientific conclusions.** The original PDF is unchanged.
